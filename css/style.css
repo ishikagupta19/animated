@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(22, 2, 2, 0.3), rgba(0,0,0,0.1)), url("../bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 5vh;
+    color: azure;
+    display: flex; justify-content: space-around;
+    align-items: center;
+    font-family: 'Poiret One', cursive;
+    background: rgba(255, 241, 241, 0.138);
+}
+nav .logo{
+    width: 35%; text-align:center;
+    margin-top: 90px; font-size: 60px; 
+}
+nav .logoh img{
+    width: 140px;
+    height: 120px;
+    margin-top: 100px;
+}
+nav .menu{
+    width:52%; margin-top: 120px; 
+    font-size: 25px; display: flex;
+    justify-content: space-between; margin-right: 15px;
+    
+}
+nav .menu a{
+    text-decoration: none;
+    width: 95%; color: rgb(255, 255, 255);
+    font-weight: bold; 
+}
+nav .menu a:last-child{
+    color:rgb(255, 255, 254);
+    padding: 5px 15px 10px 10px; 
+    border-radius: 5px; 
+    outline: none;font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2; text-align: center;
+    background: rgb(186, 113, 16);
+    margin-top: 0px; margin-bottom: 20px;
+    margin-left: 0px; margin-right: 15px;
+}
+main{
+    width: 100%;
+    height: 95vh; display: flex;
+    justify-content: center;
+    align-items: center; text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+section h3{
+    font-size: 35px; font-weight: 300;
+    color: rgb(251, 250, 250); text-shadow: 1px 1px 2px black;
+    margin-bottom: 25px;
+}
+section h1{
+    margin: 20px 0px 25px 0px;
+    font-size: 65px;
+    font-weight: 700; color: rgb(255, 196, 181);
+    text-shadow: 2px 1px 5px black;
+    font-family: 'Poiret One', cursive;
+}
+section p{
+    font-size: 29px;
+    text-shadow: 1px 1px 1px black;
+    color: rgb(255, 255, 255);
+    margin-bottom: 35px;
+}
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;font-size: 23px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1;
+    color:rgb(114, 34, 8);
+    transition: all 0.5s ease;
+    }
+
+section .btn1{
+    background: rgb(255, 238, 216); 
+}
+.btn1:hover{
+    background: rgb(159, 50, 50); color: rgb(255, 229, 206);
+}
+section .btn2{
+    background: rgb(186, 113, 16); color: rgb(255, 229, 206); 
+}
+.btn2:hover{
+    background: rgb(159, 50, 50); 
+}
+nav .menu .btn3{
+    background: rgb(186, 113, 16); color: rgb(255, 229, 206);
+}
+.menu .btn3:hover{
+    background: rgb(159, 50, 50); transition: all 0.5s ease;
+}
+.change_content:after{
+    content: ''; color: rgb(255, 90, 90);
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0% {content:"LISTEN";}
+    20% {content:"FEEL";}
+    40% {content:"GROOVE";}
+    60% {content:"LISTEN";}
+    80% {content:"FEEL";}
+    100% {content:"GROOVE";}
+}
